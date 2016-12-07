@@ -5,9 +5,7 @@
 }
 
 body {
-  @include text(1em, 1.5, $color: $color-text-base);
   margin: 0;
-  font-family: $stack-helvetica;
 }
 
 h1,
@@ -25,15 +23,11 @@ h3 {
   margin-bottom: 1.7em;
 }
 
-img {
-  max-width: 100%;
-  margin-bottom: 20px;
-  border-radius: $br;
-}
 
 ul,
 ol {
-  margin: 30px 0;
+    list-style: none;
+    margin: 0;
 }
 
 li {
@@ -42,7 +36,32 @@ li {
 
 p {
   min-height: 60px;
+  margin: 0;
 }
+
+header {
+  background-color: lightblue;
+  ul {
+    margin: 0;
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 0px;
+  }
+}
+
+// Nav Style
+
+.navbar {
+  background-color: #369;
+  color: white;
+  li {
+    display: inline;
+    margin: .1em .5em;
+  }
+}
+
 
 /* Pseudo-classes ------------------ */
 
@@ -65,85 +84,92 @@ a {
 
 #main {
   @include outer-container();
-  background-color: lightgrey;
+  background-color: white;
+  width: 92vw;
+  margin: 3%;
 }
 
 #main-tile {
   @include span-columns(12);
-}
-
-#mainimg {
-  @include span-columns(12 of 12);
+  background-color: pink;
+  border-top: 1px solid pink;
+  img {
+    max-width: 100%;
+  }
 }
 
 .news-tile {
   @include span-columns(12 of 12);
+  height: 15em;
+  background-color: lightgrey;
+  margin-top: 1.5em;
+  border-top: 1px solid aquamarine;
+    img {
+      height: 150px;
+      width: 300px;
+    }
 }
+
 
 .story {
   @include span-columns(12 of 12);
+  background-color: lightgrey;
 }
 
-.news-gallery {
+#news-gallery-1 {
   @include span-columns(12 of 12);
+  background-color: white;
+  margin-top: 1.5em;
+  border-top: 1px solid goldenrod;
 }
 
 .gallery-tile {
   @include span-columns(6 of 12);
+  max-width: 300px;
+    img {
+      width: 100%;
+
+    border-top: 1px solid goldenrod;
+  }
+    p {
+      width: 100%;
+    }
+
+}
+
+#footer {
+  background-color: darkgrey;
+  color: white;
+  margin: 0;
+  padding: 1em;
 }
 
 #footernav{
   @include span-columns(12 of 12);
+  background-color: darkgrey;
+  margin: 0;
+  color: white;
 }
 
 #footer-nav-1{
   @include span-columns(6 of 12);
+  background-color: darkgrey;
 }
 
 #footer-nav-2{
   @include span-columns(6 of 12);
+  background-color: darkgrey;
 }
-
-
-#red, #orange, #yellow {
-  @media screen and (max-width: 768px){
-    @include span-columns(12 of 12);
-  }
-}
-
-#middle-row{
-  @include span-columns(12);
-}
-
-#green{
-  background-color: green;
-  @include span-columns(4 of 12);
-}
-
-#blue{
-  background-color: blue;
-  @include span-columns(8 of 12);
-}
-
-#bottom-row{
-  @include span-columns(12);
-}
-
-#indigo {
-  background-color: indigo;
-  @include span-columns(4 of 12);
-  @include shift(8 of 12);
-}
-
-#blue, #indigo, #green {
-  @media screen and (max-width: 768px){
-    @include span-columns(12 of 12);
-    @include shift (0 of 12);
-  }
 
 #main {
   @include outer-container(1500px);
   }
-}
+
+  #copyright {
+    background-color: darkgray;
+    color: white;
+    padding: 1em;
+  }
+
 
 // Our columns
