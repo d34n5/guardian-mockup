@@ -1,0 +1,216 @@
+html {
+  box-sizing: border-box; }
+
+*, *::after, *::before {
+  box-sizing: inherit; }
+
+/* Base Styles -------------------- */
+* {
+  box-sizing: border-box; }
+
+body {
+  font-size: 1em;
+  line-hegiht: 1.5;
+  color: #878787;
+  margin: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
+h1,
+h2 {
+  font-family: "Abolition Regular", Helvetica, Arial, sans-serif; }
+
+h2 {
+  font-size: 3.3125em;
+  line-hegiht: 1.1;
+  font-weight: normal;
+  margin: 0 0 .5em; }
+
+h3 {
+  font-size: 1.25em;
+  line-hegiht: 1.2;
+  color: #48525c;
+  margin-bottom: 1.7em; }
+
+img {
+  max-width: 100%;
+  margin-bottom: 20px;
+  border-radius: 10px; }
+
+ul,
+ol {
+  margin: 30px 0; }
+
+li {
+  margin-bottom: 10px; }
+
+p {
+  min-height: 60px; }
+
+/* Pseudo-classes ------------------ */
+a:link {
+  color: #ffa949;
+  text-decoration: none; }
+a:visited {
+  color: #add8e6; }
+a:hover {
+  color: rgba(255, 169, 73, 0.4); }
+
+/* Grid ------------------ */
+#main {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: lightgrey; }
+  #main::after {
+    clear: both;
+    content: "";
+    display: block; }
+
+#main-tile {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%; }
+  #main-tile:last-child {
+    margin-right: 0; }
+
+#mainimg {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%; }
+  #mainimg:last-child {
+    margin-right: 0; }
+
+.news-tile {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%; }
+  .news-tile:last-child {
+    margin-right: 0; }
+
+.story {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%; }
+  .story:last-child {
+    margin-right: 0; }
+
+.news-gallery {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%; }
+  .news-gallery:last-child {
+    margin-right: 0; }
+
+.gallery-tile {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%; }
+  .gallery-tile:last-child {
+    margin-right: 0; }
+
+#footernav {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%; }
+  #footernav:last-child {
+    margin-right: 0; }
+
+#footer-nav-1 {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%; }
+  #footer-nav-1:last-child {
+    margin-right: 0; }
+
+#footer-nav-2 {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%; }
+  #footer-nav-2:last-child {
+    margin-right: 0; }
+
+@media screen and (max-width: 768px) {
+  #red, #orange, #yellow {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%; }
+    #red:last-child, #orange:last-child, #yellow:last-child {
+      margin-right: 0; } }
+
+#middle-row {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%; }
+  #middle-row:last-child {
+    margin-right: 0; }
+
+#green {
+  background-color: green;
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%; }
+  #green:last-child {
+    margin-right: 0; }
+
+#blue {
+  background-color: blue;
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 65.88078%; }
+  #blue:last-child {
+    margin-right: 0; }
+
+#bottom-row {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%; }
+  #bottom-row:last-child {
+    margin-right: 0; }
+
+#indigo {
+  background-color: indigo;
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%;
+  margin-left: 68.23843%; }
+  #indigo:last-child {
+    margin-right: 0; }
+
+@media screen and (max-width: 768px) {
+  #blue, #indigo, #green {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+    margin-left: 0%; }
+    #blue:last-child, #indigo:last-child, #green:last-child {
+      margin-right: 0; } }
+#blue #main, #indigo #main, #green #main {
+  max-width: 1500px;
+  margin-left: auto;
+  margin-right: auto; }
+  #blue #main::after, #indigo #main::after, #green #main::after {
+    clear: both;
+    content: "";
+    display: block; }
+
+/* Floated Columns ------------------ */
+.main-header {
+  text-align: center; }
+
+/*# sourceMappingURL=application.css.map */

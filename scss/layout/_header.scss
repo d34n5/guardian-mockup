@@ -1,0 +1,6 @@
+.main-header {
+  @extend %centered;
+
+  @media #{$brk-narrow} {
+  }
+}
