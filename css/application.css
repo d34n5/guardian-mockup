@@ -24,7 +24,7 @@ h2 {
 h3 {
   font-size: 1.25em;
   line-hegiht: 1.2;
-  color: #48525c;
+  color: #000;
   margin-bottom: 1.7em; }
 
 ul,
@@ -39,6 +39,7 @@ p {
   min-height: 60px;
   margin: 0; }
 
+/* Pseudo-classes ------------------ */
 header {
   background-color: lightblue; }
   header ul {
@@ -51,28 +52,54 @@ header {
 
 .navbar {
   background-color: #369;
-  color: white; }
+  color: #fff; }
   .navbar li {
     display: inline;
     margin: .1em .5em; }
 
-/* Pseudo-classes ------------------ */
-a:link {
-  color: #ffa949;
-  text-decoration: none; }
-a:visited {
-  color: #add8e6; }
-a:hover {
-  color: rgba(255, 169, 73, 0.4); }
+#footer {
+  background-color: #504A4B;
+  margin: 0;
+  color: #fff;
+  padding: 1em; }
+
+#footernav {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  background-color: #504A4B;
+  margin: 0;
+  color: #fff; }
+  #footernav:last-child {
+    margin-right: 0; }
+
+#footer-nav-1 {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+  background-color: #504A4B; }
+  #footer-nav-1:last-child {
+    margin-right: 0; }
+
+#footer-nav-2 {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+  background-color: #504A4B; }
+  #footer-nav-2:last-child {
+    margin-right: 0; }
 
 /* Grid ------------------ */
 #main {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  background-color: white;
-  width: 92vw;
-  margin: 3%; }
+  background-color: #fff;
+  margin: 3%;
+  width: 92vw; }
   #main::after {
     clear: both;
     content: "";
@@ -95,8 +122,8 @@ a:hover {
   display: block;
   margin-right: 2.35765%;
   width: 100%;
-  height: 15em;
   background-color: lightgrey;
+  height: 15em;
   margin-top: 1.5em;
   border-top: 1px solid aquamarine; }
   .news-tile:last-child {
@@ -119,7 +146,7 @@ a:hover {
   display: block;
   margin-right: 2.35765%;
   width: 100%;
-  background-color: white;
+  background-color: #fff;
   margin-top: 1.5em;
   border-top: 1px solid goldenrod; }
   #news-gallery-1:last-child {
@@ -139,41 +166,6 @@ a:hover {
   .gallery-tile p {
     width: 100%; }
 
-#footer {
-  background-color: darkgrey;
-  color: white;
-  margin: 0;
-  padding: 1em; }
-
-#footernav {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 100%;
-  background-color: darkgrey;
-  margin: 0;
-  color: white; }
-  #footernav:last-child {
-    margin-right: 0; }
-
-#footer-nav-1 {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 48.82117%;
-  background-color: darkgrey; }
-  #footer-nav-1:last-child {
-    margin-right: 0; }
-
-#footer-nav-2 {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 48.82117%;
-  background-color: darkgrey; }
-  #footer-nav-2:last-child {
-    margin-right: 0; }
-
 #main {
   max-width: 1500px;
   margin-left: auto;
@@ -184,12 +176,11 @@ a:hover {
     display: block; }
 
 #copyright {
-  background-color: darkgray;
-  color: white;
+  background-color: #504A4B;
+  color: #fff;
   padding: 1em; }
 
-/* Floated Columns ------------------ */
-.main-header {
+.main-header, .gallery-tile p {
   text-align: center; }
 
 /*# sourceMappingURL=application.css.map */

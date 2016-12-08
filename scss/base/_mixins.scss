@@ -18,3 +18,9 @@
   font-weight: $weight;
   color: $color;
 }
+
+@mixin tile($background, $margin: null, $width: null) {
+  background-color: $background;
+  margin: $margin;
+  width: $width;
+}

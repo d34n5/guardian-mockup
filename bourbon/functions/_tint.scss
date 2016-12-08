@@ -1,11 +1,11 @@
 @charset "UTF-8";
 
-/// Mixes a color with white.
+/// Mixes a color with $white.
 ///
 /// @param {Color} $color
 ///
 /// @param {Number (Percentage)} $percent
-///   The amount of white to be mixed in.
+///   The amount of $white to be mixed in.
 ///
 /// @example scss - Usage
 ///   .element {

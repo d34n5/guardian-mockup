@@ -4,3 +4,28 @@
   @media #{$brk-narrow} {
   }
 }
+
+// Header
+
+header {
+  background-color: lightblue;
+  ul {
+    margin: 0;
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 0px;
+  }
+}
+
+// Navbar
+
+.navbar {
+  background-color: #369;
+  color: $color-text-light;
+  li {
+    display: inline;
+    margin: .1em .5em;
+  }
+}

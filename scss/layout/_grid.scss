@@ -1,0 +1,62 @@
+/* Grid ------------------ */
+
+#main {
+  @include outer-container();
+  @include tile ($white, 3%, 92vw);
+}
+
+#main-tile {
+  @include span-columns(12);
+  @include tile (pink);
+  border-top: 1px solid pink;
+  img {
+    max-width: 100%;
+  }
+}
+
+.news-tile {
+  @include span-columns(12 of 12);
+  @include tile(lightgrey);
+  height: 15em;
+  margin-top: 1.5em;
+  border-top: 1px solid aquamarine;
+    img {
+      height: 150px;
+      width: 300px;
+    }
+}
+
+.story {
+  @include span-columns(12 of 12);
+  @include tile (lightgrey);
+}
+
+#news-gallery-1 {
+  @include span-columns(12 of 12);
+  @include tile ($white);
+  margin-top: 1.5em;
+  border-top: 1px solid $goldenrod;
+}
+
+.gallery-tile {
+  @include span-columns(6 of 12);
+  max-width: 300px;
+    img {
+      width: 100%;
+      border-top: 1px solid $goldenrod;
+  }
+    p {
+      width: 100%;
+      @extend %centered;
+    }
+}
+
+#main {
+  @include outer-container(1500px);
+  }
+
+#copyright {
+  @include tile ($darkgrey);
+  color: $color-text-light;
+  padding: 1em;
+}
